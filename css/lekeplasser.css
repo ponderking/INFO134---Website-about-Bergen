@@ -1,0 +1,90 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #445566;
+    background: linear-gradient(#6bb7ea, #222);
+  font-family: Arial, sans-serif;
+}
+
+
+#topBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #14181C;
+  font-size: 1.0vw;
+  margin: -10px -10px -10px -10px;
+}
+
+#topBar > div {
+  padding: -0.5em 2em -0.5em 2em;
+  margin: 1em;
+  color: white;
+}
+/*
+
+#topSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} */
+
+
+#headline {
+  text-align: center;
+  font-size: 305%;
+  color:white;
+  text-align: center;
+  margin-top: 2em;
+  text-shadow: 2px 2px #000;
+  padding-bottom: 7%;
+  margin-bottom: 0.1em;
+  border-bottom: solid 1px white;
+}
+
+
+
+#main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+#antallLekeplasser {
+  margin: 0 0 0 2em;
+  height: 2em;
+}
+
+
+#map {
+  display: flex;
+  margin-top: 2em;
+  margin-right: 2em;
+  float: right;
+  height: 50em;
+  width: 70em;
+  border: 1px solid;
+  box-shadow:20px 20px 10px #000;
+}
+
+
+li {
+  margin-bottom: 0.5em;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 1.0vw;
+  /* letter-spacing: 0.2em; */
+  text-shadow: 2px 2px #000;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: grey;
+}

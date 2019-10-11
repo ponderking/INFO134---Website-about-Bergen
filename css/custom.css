@@ -1,0 +1,76 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #445566;
+    background: linear-gradient(#6bb7ea, #222);
+  font-family: Arial, sans-serif;
+}
+
+
+#main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 15em;
+}
+
+/* Navigation bar at the top  */
+
+#topBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #14181C;
+  font-size: 1.0vw;
+  margin: -10px -10px -10px -10px;
+
+}
+
+#topBar > div {
+  padding: -0.5em 2em -0.5em 2em;
+  margin: 1em;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: grey;
+}
+
+#headline {
+  padding-bottom: 3em;
+  color: #FFF;
+  font-size: 300%;
+  margin-top: 5.5%;
+  text-align: center;
+  text-shadow: 2px 2px #000;
+  border-bottom: 1px solid white;
+  /* letter-spacing: 0.2em; */
+}
+
+#valgAvGraf {
+  font-size: 120%;
+  margin-top: 3em;
+  color: white;
+  text-shadow: 2px 2px #000;
+}
+
+#valgAvGraf > input,input,input{
+  margin-bottom: 1em;
+
+}
+
+#valgAvGraf > hr {
+  margin-bottom: 2em;
+}
+
+
+#chartContainer {
+  height: 30em;
+  width: 75em;
+  border: solid 2px black;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/customv2.css">
+    <title>Custom Dataset</title>
+  </head>
+  <body>
+      <div id="topBar">
+          <div><a>Hjemside</a></div>
+          <div><a>Toaletter</a></div>
+          <div><a>Lekeplasser</a></div>
+          <div><a>Favoritt</a></div>
+          <div><a>Norge Rundt</a></div>
+      </div>
+
+    <h1 id="headline">Norge Rundt Statistikker</h1>
+
+    <div id="main">
+        <form id = "valgAvGraf">
+            <h2>Type Graf:</h2>
+            <input type="radio" value="tema" name="brukerValg">Episode Tema<p>
+            <input type="radio" value="hovedperson1_kjonn" name="brukerValg">Kjønn av hoved-person<p>
+            <input type="radio" value="hovedperson1_alder" name="brukerValg">Alder av hoved-person<p>
+            <p>Velg årstall: (<em> må være et år mellom 1976-2016</em>)</p>
+            <input type="text" value="" name="aarValg">
+            <hr>
+            <input type="button" value="Velg" onclick="getBrukerValg()">
+        </form>
+
+          <div id="displayData"></div>
+          <script type="text/javascript" src="js/customv2.js"></script>
+    </div>
+  </body>
+</html>

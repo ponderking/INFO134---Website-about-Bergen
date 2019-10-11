@@ -1,0 +1,141 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #445566;
+  background: linear-gradient(#6bb7ea, #222);
+  font-family: Arial, sans-serif;
+}
+
+/* øverste navigeringsbar*/
+
+#topBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #14181C;
+  font-size: 1.0vw;
+  margin: -10px -10px -10px -10px;
+}
+
+#topBar > div {
+  padding: -0.5em 2em -0.5em 2em;
+  margin: 1em;
+  color: white;
+}
+
+/*  div rundt overskrift og hurtig-søket*/
+
+#topSection {
+  display: flex;
+  flex-direction: row;
+}
+
+/* overskrift */
+
+#headline {
+  font-size: 305%;
+  color:white;
+  text-align: center;
+  margin-top: 2em;
+  text-shadow: 2px 2px #000;
+}
+
+/* div rundt søkefeltet */
+
+#quickSearch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 0 2em;
+  color: white;
+  text-shadow: 2px 2px #000;
+}
+
+/* selve søkefeltet */
+
+#searchField {
+ margin: 0 0 0 2em;
+ height: 2em;
+}
+
+
+/*  div rundt avansert-søk, søke resultat og kartet,*/
+
+#main {
+display: flex;
+flex-flow: row;
+justify-content: space-around;
+align-content: space-between;
+margin-top: 2em;
+border: solid white 1px;/
+}
+
+
+/*  avansert-søk */
+
+#toiletSearch {
+  margin-top: 2em;
+  background-color: white;
+  border: solid 2px black;
+}
+
+
+#toiletSearch > input, h1, h2, p {
+  margin-left: 1em;
+}
+
+#toiletSearch > input{
+  margin-left: 2em;
+}
+
+#searchResults {
+  margin-top: 1em;
+  color: white;
+  text-shadow: 2px 2px #000;
+}
+
+#map {
+ border: solid 2px black;
+ margin-top: 2em;
+ float: right;
+ height: 50em;
+ width: 50em;
+ box-shadow:20px 20px 10px #000;
+}
+
+li {
+  margin-bottom: 0.5em;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 1.0vw;
+  /* letter-spacing: 0.2em; */
+  text-shadow: 2px 2px #000;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: grey;
+}
+
+#footer {
+display: flex;
+flex-flow: row;
+justify-content: center;
+margin: 0;
+color: white;
+width: 100%;
+height: 30%;
+background-color: #2C3641;
+border: 1px solid white;
+padding-top: 2%;
+}
+
+#footerText {
+ font-size: 200%;
+}

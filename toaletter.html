@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/toaletter.css">
+    <title>Toaletter I Bergen Sentrum</title>
+  </head>
+  <body>
+    <!-- navigeringsbar på toppen -->
+      <div id="topBar">
+        <div><a href="index.html">Hjemside</a></div>
+        <div><a href="">Toaletter</a></div>
+        <div><a href="lekeplasser.html">Lekeplasser</a></div>
+        <div><a href="favoritt.html">Favoritt</a></div>
+        <div><a href="custom.html">Norge Rundt</a></div>
+     </div>
+     <h1 id="headline">Toalett Oversikt</h1>
+
+     <!-- HURTIG SØK -->
+     <div id ="quickSearch">
+    <h2>Hurtig Søk</h2>
+     <input type="text" id="searchField" onkeydown="if (event.keyCode == 13)
+                        readUserSearch()" placeholder="Search for toilets" title="Toilet Search">
+     </div>
+     <div id="main">
+       <!--  AVANSERT SØK-->
+        <form id= "toiletSearch">
+          <h1>Avansert Søk</h1>
+          <h2>Kjønn</h2>
+          <input type="checkbox" value="1" name="herre">Herre<p>
+          <input type="checkbox" value="1" name="dame">Dame<p>
+          <hr>
+          <h2>Rullestol</h2>
+          <input type="radio" value="1" name="rullestol">Ja<p>
+          <input type="radio" value="NULL" name="rullestol">Nei<p>
+          <hr>
+          <h2>Stellerom</h2>
+          <input type="radio" value="1" name="stellerom">Ja<p>
+          <input type="radio" value="NULL" name="stellerom">Nei<p>
+          <hr>
+          <h2>Åpen nå</h2>
+          <input type="radio" value="1" name="openNow">Ja<p>
+          <input type="radio" value="NULL" name="openNow">Nei<p>
+          <hr>
+          <h2>Åpen<klokkeslet> i dag</h2>
+          <p><em>Input must be of the format: HH.MM (hours, minutes)</em></p>
+          <input type="text" value="" name="openAt">
+          <hr>
+          <h2>Gratis</h2>
+          <input type="radio" value="1" name="free">Ja<p>
+          <input type="radio" value="NULL" name="free">Nei<p>
+          <h2>Maks pris</h2>
+          <input type="text" value="" name="pris">
+          <hr>
+          <input type="button" value="Søk" onclick="update()">
+        </form>
+        <!--  Liste over resultat fra AVANSERT SØK eller HURTIG SØK-->
+      <div id="searchResults">
+          <h1>Søke Resultat</h1>
+          <header id="header">
+          </header>
+      </div>
+
+      <!-- <div id="botomBar">
+        <div><a href="">Home</a></div>
+        <div><a href="food.html">Food</a></div>
+        <div><a href="">Page 3</a></div>
+        <div><a href="">Page 4</a></div>
+        <div><a href="food.html">Map</a></div>
+      </div> -->
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKGjEK8PginIbglsL-6FJdvOFTK3bMzkw&callback=initMap">
+      </script>
+      <script type="text/javascript" src="js/toaletter.js"></script>
+      <!-- kart -->
+      <div id="map"></div>
+  </div>
+  </body>
+</html>

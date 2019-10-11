@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Favoritt</title>
+    <link rel="stylesheet" type="text/css" href="css/favoritt.css">
+  </head>
+  <body>
+  <div id="container">
+    <!--  navigeringsbar på toppen av siden -->
+    <div id="topBar">
+        <div><a href="index.html">Hjemside</a></div>
+        <div><a href="toaletter.html">Toaletter</a></div>
+        <div><a href="lekeplasser.html">Lekeplasser</a></div>
+        <div><a href="">Favoritt</a></div>
+        <div><a href="custom.html">Norge Rundt</a></div>
+    </div>
+    <!--  overskrift-->
+    <h1 id="headline">Finn Nærmeste Toalett</h1>
+
+    <div id="main">
+         <!--  Her vises de ulike toalettene som brukeren kan velge mellom og trykke på-->
+        <div id ="selections">
+            <form id="selectionForm"></form>
+        </div>
+        <!--  Her vises informasjon om valget til brukeren-->
+        <div id="choiceSection">
+            <h2 id="til"></h2>
+        </div>
+        <!--  Her vises informasjon om avstanden -->
+        <div id="pointer">
+        </div>
+        <!--  Her vises informasjon om det nærmeste toalletet til valget av brukeren-->
+        <div id="nearestSection">
+            <h2 id="til"></h2>
+        </div>
+   </div>
+  <script type="text/javascript" src="js/favoritt.js"></script>
+  </div>
+  </body>
+</html>

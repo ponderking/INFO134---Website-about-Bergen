@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lekeplasser i Bergen</title>
+    <link rel="stylesheet" type="text/css" href="css/lekeplasser.css">
+  </head>
+  <body>
+    <!--  navigeringsbar på toppen -->
+    <div id="topBar">
+        <div><a href="index.html">Hjemside</a></div>
+        <div><a href="toaletter.html">Toaletter</a></div>
+        <div><a href="">Lekeplasser</a></div>
+        <div><a href="favoritt.html">Favoritt</a></div>
+        <div><a href="custom.html">Norge Rundt</a></div>
+    </div>
+    <!--  overskrift -->
+    <div id="topSection">
+        <h1 id="headline">Lekeplasser i Bergen</h1>
+    </div>
+    <div id="main">
+      <!--  brukeren kan velge antall lekeplasser som vises-->
+      <input type="text" id="antallLekeplasser" onkeydown="if (event.keyCode == 13)
+                         update()" placeholder="Antall Lekeplasser" title="Antall Lekeplasser">
+        <div id="header"></div>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKGjEK8PginIbglsL-6FJdvOFTK3bMzkw&callback=initMap">
+        </script>
+        <script type="text/javascript" src="js/lekeplasser.js"></script>
+        <!--  kart -->
+        <div id="map"></div>
+    </div>
+  </body>
+</html>
